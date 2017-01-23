@@ -1,0 +1,23 @@
+[alias]
+	tree = log --graph --pretty=format:'%C(red)%h%C(reset) -%C(yellow)%d%C(reset) %s %C(green)(%an) %C(blue)<%cr>%C(reset)'
+	aliases = config --get-regexp alias
+	commend = commit --amend --no-edit
+	please = push --force-with-lease
+[color]
+	ui = true
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore
+[pull]
+	rebase = true
+[push]
+	default = simple
+[merge]
+	ff = false
+[user]
+	name = Romain Masciulli
+	email = romain.masciulli@gmail.com
+[diff]
+	algorithm = minimal
+	compactionHeuristic = true
+	renames = true
