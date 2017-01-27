@@ -5,21 +5,17 @@ This repository contains various configuration files for packages such as neovim
 
 For the moment, there is no automated installation script.
 Thus, you must clone the repository and manually copy-paste the diverse configuration files.
-Use these commands to clone the directory and update your settings:
+Use these commands to clone the main directory and to update your settings.
 
 ```
-git clone --recursive https://github.com/rmasciulli/dotfiles.git ~/development/dotfiles
-cp -ri ~/development/.config/ ~/.config
-cp -ri ~/development/.tmux/ ~/.tmux
-cp -i ~/development/.tmux.conf ~/.tmux.conf
+git clone --recursive https://github.com/rmasciulli/dotfiles.git ~/dotfiles
+cp -rf ~/dotfiles/.config/ ~/
+cp -rf ~/dotfiles/.tmux/ ~/
+cp -f ~/dotfiles/.tmux.conf ~/
 ```
 
-## Update
+After installation, you can remove the '~/dotfiles/' directory.
 
 ```
-cd ~/development/dotfiles
-git pull --all
-cp -ri ~/development/.config/ ~/.config
-cp -ri ~/development/.tmux/ ~/.tmux
-cp -i ~/development/.tmux.conf ~/.tmux.conf
+rm -r ~/dotfiles/
 ```
